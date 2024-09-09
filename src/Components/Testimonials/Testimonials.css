@@ -11,10 +11,6 @@ body {
   height: 100%;
   padding: 50px 200px 100px 200px;
 }
-.swiper-slide {
-  max-width: 100% !important;
-  width: auto !important;
-}
 .testimonials {
   text-align: center;
 }
@@ -31,9 +27,6 @@ body {
 
 .text-container {
   width: 100%;
-}
-
-.swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +35,7 @@ body {
 .comment {
   background-color: var(--text-color);
   color: var(--monial-color);
-  width: 200px;
+  width: 230px;
   padding: 20px;
   box-sizing: border-box;
   text-align: left;
@@ -51,11 +44,92 @@ body {
 .comment h5 {
   padding: 5px;
   font-weight: lighter;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .name {
   font-weight: bold;
   font-size: 1rem;
   margin-top: 10px;
+}
+
+/* Portrait/Mobile View */
+@media (max-width: 600px) {
+  .t-wrapper {
+    height: 100%;
+    padding: 20px 10px 10px 10px;
+  }
+  .testimonials {
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonials h1 {
+    font-size: 2rem;
+    line-height: 5px;
+  }
+  .testimonials h3 {
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 5px;
+    padding-bottom: 30px;
+  }
+  .text-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .comment {
+    margin: auto;
+    margin-bottom: 50px;
+    width: 230px;
+    justify-content: center;
+    align-items: center;
+  }
+  .comment h5 {
+    padding: 5px;
+    font-weight: lighter;
+    font-size: 1rem;
+  }
+}
+
+/* Landscape and iPad View */
+@media (min-width: 750px) and (max-width: 900px) {
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .t-wrapper {
+    height: 100%;
+    padding: 20px 10px 10px 10px;
+  }
+  .testimonials {
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonials h1 {
+    font-size: 2rem;
+    line-height: 5px;
+  }
+  .testimonials h3 {
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height: 5px;
+    padding-bottom: 30px;
+  }
+  .text-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .comment {
+    margin: auto;
+    margin-bottom: 50px;
+    width: 230px;
+    justify-content: center;
+    align-items: center;
+  }
+  .comment h5 {
+    padding: 5px;
+    font-weight: lighter;
+    font-size: 1rem;
+  }
 }

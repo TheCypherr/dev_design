@@ -84,3 +84,130 @@ button.btn {
   text-align: center;
   margin-bottom: 15px;
 }
+
+/* Portrait/Mobile View */
+@media (max-width: 600px) {
+  .footer-wrapper {
+    padding: 20px 10px 20px 10px;
+  }
+  .footer-main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .side-1 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .side-1 h1 {
+    font-size: 1.7rem;
+  }
+  .side-1 h4 {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+  .side-2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .side-2 h1 {
+    font-size: 1.7rem;
+  }
+  .side-2 h4 {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+  .side-2 ul {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  .side-3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .side-3 img {
+    align-items: center;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  .icons p {
+    text-align: center;
+    margin-bottom: -10px;
+  }
+  button.btn {
+    float: right;
+  }
+  .small-input {
+    text-align: left;
+  }
+  .small-input input {
+    width: 100px;
+    padding: 5px;
+    border: none;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+  }
+  .inputs input {
+    width: 180px;
+    padding: 5px;
+    padding-bottom: 35px;
+    border: none;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+  }
+}
+/* Landscape and iPad View */
+@media (min-width: 750px) and (max-width: 900px) {
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .footer-wrapper {
+    padding: 20px 50px 20px 50px;
+  }
+  .side-1 h1 {
+    font-size: 1.7rem;
+  }
+  .side-1 h4 {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+  .side-2 h1 {
+    font-size: 1.7rem;
+  }
+  .side-2 h4 {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+  .side-2 ul {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  .side-3 {
+    text-align: center;
+  }
+  .side-3 img {
+    align-items: center;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  .icons p {
+    text-align: center;
+    margin-bottom: -10px;
+  }
+  .small-input input {
+    width: 100px;
+    padding: 5px;
+    border: none;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+  }
+  .inputs input {
+    width: 180px;
+    padding: 5px;
+    padding-bottom: 35px;
+    border: none;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+  }
+}

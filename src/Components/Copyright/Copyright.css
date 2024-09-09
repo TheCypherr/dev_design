@@ -14,3 +14,27 @@ body {
   text-align: center;
   padding: 5px;
 }
+
+/* Portrait/Mobile View */
+@media (max-width: 600px) {
+  .copy-wrapper {
+    padding: 0px 0px 0px 0px;
+  }
+  .copyright {
+    padding: 10px;
+    font-size: 10px;
+  }
+}
+/* Landscape and iPad View */
+@media (min-width: 750px) and (max-width: 900px) {
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .copy-wrapper {
+    padding: 0px 0px 0px 0px;
+  }
+  .copyright {
+    padding: 10px;
+    font-size: 10px;
+  }
+}

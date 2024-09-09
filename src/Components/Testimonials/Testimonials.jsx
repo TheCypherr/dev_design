@@ -15,31 +15,31 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className="comment">
                 <h5>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eaque, voluptatibus magni expedita assumenda nihil autem
-                  tempora ad nemo doloribus repellendus!
+                  Pelumi's photography isn't just about snapping pictures; it's
+                  about telling stories. His dedication and passion shine
+                  through every shot.
                 </h5>
-                <div className="name">Tolani</div>
+                <div className="name">Tife</div>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="comment">
                 <h5>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eaque, voluptatibus magni expedita assumenda nihil autem
-                  tempora ad nemo doloribus repellendus!
+                  Cypher has an incredible gift for capturing moments that most
+                  people would miss. His creativity and hard work are truly
+                  inspiring.
                 </h5>
-                <div className="name">Kemi</div>
+                <div className="name">Cynthia</div>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="comment">
                 <h5>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eaque, voluptatibus magni expedita assumenda nihil autem
-                  tempora ad nemo doloribus repellendus!
+                  Pelumi's work feels so effortless, yet it's clear how much
+                  thought and heart goes into each image. His eye for detail is
+                  amazing.
                 </h5>
                 <div className="name">Ade</div>
               </div>
@@ -48,9 +48,9 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className="comment">
                 <h5>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eaque, voluptatibus magni expedita assumenda nihil autem
-                  tempora ad nemo doloribus repellendus!
+                  Cypher's commitment to his craft is unreal. He consistently
+                  turns everyday moments into stunning visuals with a style
+                  that's all his own.
                 </h5>
                 <div className="name">Bola</div>
               </div>
