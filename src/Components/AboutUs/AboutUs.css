@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, "Noto Sans";
+  font-weight: lighter;
+  padding: 0px;
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--about-bg);
+}
+.about-wrapper {
+  height: 100%;
+  padding: 50px 200px 30px 200px;
+}
+.inner-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+.swiper-wrapper {
+  display: flex;
+}
+.swiper-slide {
+  flex: 0 0 auto;
+  width: 100% !important;
+  box-sizing: border-box;
+  margin: 0;
+}
+.about-one {
+  box-sizing: border-box;
+  flex: 0 0 27rem;
+  margin-right: 20px;
+}
+.image-container {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  max-width: max-content;
+  transition: all 300ms ease-in;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.about-two {
+  flex: 0 0 550px;
+}
+.about-two h1 {
+  font-size: 2.5rem;
+}
+.about-two p {
+  font-size: 1.3rem;
+  line-height: 25px;
+}
+.about-two :last-child {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Portrait/Mobile View */
+@media (max-width: 600px) {
+  .about-wrapper {
+    height: 100%;
+    padding: 20px 20px 10px 20px;
+  }
+  .inner-about {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .swiper-slide {
+    width: 100% !important;
+  }
+  .image-container {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 900px) {
+}
+/* Landscape and iPad View */
+@media (min-width: 600px) and (max-width: 900px) {
+  .about-wrapper {
+    height: 100%;
+    padding: 20px 20px 10px 20px;
+  }
+  .inner-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  .swiper-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .swiper-wrapper {
+    display: flex;
+  }
+  .swiper-slide {
+    flex: 0 0 auto;
+    width: 100% !important;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .about-one {
+    box-sizing: border-box;
+    flex: 0 0 27rem;
+    margin-right: 20px;
+  }
+  .image-container {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    max-width: max-content;
+    transition: all 300ms ease-in;
+  }
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .about-two {
+    flex: 0 0 450px;
+  }
+  .about-two h1 {
+    font-size: 2rem;
+  }
+  .about-two p {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  .about-two :last-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}

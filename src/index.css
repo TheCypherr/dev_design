@@ -1,0 +1,114 @@
+:root {
+  --text-color: #ffffff;
+  --monial-color: #000000;
+  --header-active: #3e0025;
+  --header-nonactive: rgba(37, 15, 29, 47%);
+  --about-bg: rgba(63, 8, 41, 90%);
+  --footer-bg: rgba(37, 15, 29, 73%);
+  --input-bg: #ae96a9;
+  --input-text: #666666;
+  --submit-bg: rgba(75, 33, 60, 0.756);
+  --copyright-bg: #333333;
+}
+
+body {
+  font-family: Arial, "Noto Sans";
+  color: var(--text-color);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Style the previous arrow (left) */
+.slick-prev {
+  position: absolute;
+  left: -20%; /* Move it to the far left */
+  top: 70%;
+  z-index: 1;
+}
+
+/* Style the next arrow (right) */
+.slick-next {
+  position: absolute;
+  right: -12%; /* Move it to the far right */
+  top: 70%;
+  z-index: 1;
+}
+
+/* Optional: Adjust vertical alignment */
+.slick-prev,
+.slick-next {
+  /* top: 50%; Center vertically */
+  transform: translateY(-50%);
+}
+
+/* Optional: Adjust size and appearance of arrows */
+.slick-prev::before,
+.slick-next::before {
+  font-size: 40px; /* Adjust arrow size */
+  color: var(--text-color); /* Change arrow color */
+}
+
+/* Style the container of the dots */
+.slick-dots {
+  bottom: 10px; /* Position the dots container */
+  top: 150%;
+  left: 0; /* Position the dots container from the left */
+  right: auto; /* Remove default right alignment */
+  position: absolute; /* Ensure proper positioning */
+}
+
+/* Style the dots themselves */
+.slick-dots li button:before {
+  font-size: 15px; /* Size of the dot */
+  color: #fff; /* Color of the dot */
+  opacity: 50; /* Default opacity */
+}
+
+/* Style for the active dot */
+.slick-dots li.slick-active button:before {
+  color: var(--header-active); /* Color of the active dot */
+  opacity: 1; /* Full opacity for active dot */
+  font-size: 25px;
+}
+
+/* Optional: Style for hover effect */
+.slick-dots li button:hover:before {
+  color: #fff; /* Change color on hover */
+}
+
+@media (max-width: 600px) {
+  .slick-dots li button:before {
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: -30px;
+  }
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}
+
+/* For Tablet Portrait */
+@media (min-width: 600px) and (max-width: 900px) {
+  .slick-dots li button:before {
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: -60px;
+  }
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}
+@media (min-width: 750px) and (max-width: 900px) {
+  .slick-dots {
+    padding-left: 20px;
+    margin-top: -15px;
+  }
+}

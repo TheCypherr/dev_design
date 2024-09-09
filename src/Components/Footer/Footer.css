@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, "Noto Sans";
+  font-weight: lighter;
+  padding: 0px;
+  margin: 0;
+  color: var(--text-color);
+}
+.footer-wrapper {
+  background-color: var(--footer-bg);
+  height: 100%;
+  padding: 50px 200px 30px 200px;
+}
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+}
+.side-1 {
+  line-height: 5px;
+  padding: 0;
+}
+.side-1 h1 {
+  font-size: 2rem;
+}
+.side-1 h4 {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+.small-input {
+  margin-bottom: 10px;
+}
+.small-input input {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: var(--input-bg);
+  color: var(--input-text);
+}
+.inputs input {
+  width: 230px;
+  padding: 10px;
+  padding-bottom: 70px;
+  border: none;
+  background-color: var(--input-bg);
+  color: var(--input-text);
+}
+button.btn {
+  margin-top: 15px;
+  width: 100px;
+  padding: 7px;
+  border: none;
+  background-color: var(--submit-bg);
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.side-2 {
+  padding: 0;
+}
+.side-2 h1 {
+  line-height: 5px;
+  font-size: 2rem;
+}
+.side-2 h4 {
+  font-size: 1.3rem;
+  line-height: 5px;
+  font-weight: lighter;
+}
+.side-2 ul {
+  margin-left: -20px;
+  line-height: 30px;
+  font-size: 1.1rem;
+}
+.side-2 li {
+  cursor: pointer;
+}
+.side-2 li:hover {
+  text-decoration: underline;
+}
+.side-3 img {
+  margin-bottom: 15px;
+}
+.icons {
+  text-align: center;
+  margin-bottom: 15px;
+}

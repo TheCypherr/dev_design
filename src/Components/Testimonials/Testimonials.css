@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, "Noto Sans";
+  font-weight: lighter;
+  padding: 0;
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--about-bg);
+}
+
+.t-wrapper {
+  height: 100%;
+  padding: 50px 200px 100px 200px;
+}
+.swiper-slide {
+  max-width: 100% !important;
+  width: auto !important;
+}
+.testimonials {
+  text-align: center;
+}
+.testimonials h1 {
+  font-size: 2.5rem;
+  line-height: 5px;
+}
+.testimonials h3 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 5px;
+  padding-bottom: 30px;
+}
+
+.text-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment {
+  background-color: var(--text-color);
+  color: var(--monial-color);
+  width: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.comment h5 {
+  padding: 5px;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 10px;
+}
