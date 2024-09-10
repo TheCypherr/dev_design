@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./Testimonials.css";
 import { sliderSettings } from "../../utils/commonTwo";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import { useScroll } from "../../utils/ScrollContext";
 
 const Testimonials = () => {
+  const targetRef = useRef(null);
+  const { registerRef } = useScroll();
+
+  useEffect(() => {
+    registerRef("testScroll", targetRef.current);
+  }, [registerRef]);
+
   return (
-    <section className="t-wrapper">
+    <section className="t-wrapper" ref={targetRef}>
       <div className="testimonials">
         <h1>Testimonials</h1>
         <h3>What people have to say about Cypher</h3>

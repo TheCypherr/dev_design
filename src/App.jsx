@@ -5,18 +5,23 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import Footer from "./Components/Footer/Footer";
 import Copyright from "./Components/Copyright/Copyright";
+import { ScrollProvider } from "./utils/ScrollContext";
+import ScrollToTopButton from "./utils/ScrollUpBtn";
 
 function App() {
   return (
     <>
-      <div>
-        <ScrollToTop />
-        <Header />
-        <AboutUs />
-        <Testimonials />
-        <Footer />
-        <Copyright />
-      </div>
+      <ScrollProvider>
+        <div>
+          <ScrollToTopButton />
+          <ScrollToTop />
+          <Header />
+          <AboutUs />
+          <Testimonials />
+          <Footer />
+          <Copyright />
+        </div>
+      </ScrollProvider>
     </>
   );
 }

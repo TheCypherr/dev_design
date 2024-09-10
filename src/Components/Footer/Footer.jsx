@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./Footer.css";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
+import { useScroll } from "../../utils/ScrollContext";
 
 const Footer = () => {
+  const targetRef = useRef(null);
+  const { registerRef } = useScroll();
+
+  useEffect(() => {
+    registerRef("footerScroll", targetRef.current);
+  }, [registerRef]);
   return (
-    <section className="footer-wrapper">
+    <section className="footer-wrapper" ref={targetRef}>
       <div className="footer-main">
         <div className="side-1">
           <h1>Contact Us</h1>

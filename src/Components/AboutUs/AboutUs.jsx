@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./AboutUs.css";
 import data from "../../utils/slider.json";
 import { sliderSettings } from "../../utils/common";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import { useScroll } from "../../utils/ScrollContext";
 
 const AboutUs = () => {
+  const targetRef = useRef(null);
+  const { registerRef } = useScroll();
+
+  useEffect(() => {
+    // Register the ref with a key so it can be scrolled to
+    registerRef("aboutScroll", targetRef.current);
+  }, [registerRef]);
+
   return (
-    <section className="about-wrapper">
+    <section className="about-wrapper" ref={targetRef}>
       <div className="inner-about">
         <Swiper {...sliderSettings}>
           <div className="about-one">

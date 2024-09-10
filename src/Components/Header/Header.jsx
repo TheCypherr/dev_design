@@ -5,12 +5,31 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useScroll } from "../../utils/ScrollContext";
 
 const Header = () => {
+  // imported scrollToSection from ScrollContext
+  const { scrollToSection } = useScroll();
+  // useState to open menu
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleAboutScroll = (sectionKey) => {
+    setIsOpen(false);
+    scrollToSection(sectionKey);
+  };
+
+  const handleTestScroll = (testKey) => {
+    setIsOpen(false);
+    scrollToSection(testKey);
+  };
+
+  const handleFooterScroll = (footKey) => {
+    setIsOpen(false);
+    scrollToSection(footKey);
   };
 
   const settings = {
@@ -42,13 +61,25 @@ const Header = () => {
               <Link to="/" className="custom-links">
                 Home
               </Link>
-              <Link to="/" className="custom-links">
+              <Link
+                to="/"
+                className="custom-links"
+                onClick={() => handleAboutScroll("aboutScroll")}
+              >
                 About Us
               </Link>
-              <Link to="/" className="custom-links">
+              <Link
+                to="/"
+                className="custom-links"
+                onClick={() => handleTestScroll("testScroll")}
+              >
                 Testimonials
               </Link>
-              <Link to="/" className="custom-links">
+              <Link
+                to="/"
+                className="custom-links"
+                onClick={() => handleFooterScroll("footerScroll")}
+              >
                 Contact Us
               </Link>
             </div>
@@ -59,13 +90,25 @@ const Header = () => {
           <Link to="/" className="custom-links">
             Home
           </Link>
-          <Link to="/" className="custom-links">
+          <Link
+            to="/"
+            className="custom-links"
+            onClick={() => handleAboutScroll("aboutScroll")}
+          >
             About Us
           </Link>
-          <Link to="/" className="custom-links">
+          <Link
+            to="/"
+            className="custom-links"
+            onClick={() => handleTestScroll("testScroll")}
+          >
             Testimonials
           </Link>
-          <Link to="/" className="custom-links">
+          <Link
+            to="/"
+            className="custom-links"
+            onClick={() => handleFooterScroll("footerScroll")}
+          >
             Contact Us
           </Link>
         </div>
